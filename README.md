@@ -1,6 +1,6 @@
 
 
-[!演示](http://ww1.sinaimg.cn/bmiddle/92172277jw1eqb01bzynsj20hs0vkjvf.jpg)
+![演示](http://ww1.sinaimg.cn/bmiddle/92172277jw1eqb01bzynsj20hs0vkjvf.jpg)
 
 ## LibInsformance名字的由来
 

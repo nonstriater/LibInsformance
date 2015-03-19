@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		267899AD1AB040440000C7CA /* LibInsformance.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 267899AC1AB040440000C7CA /* LibInsformance.h */; };
+		267899AF1AB040440000C7CA /* LibInsformance.m in Sources */ = {isa = PBXBuildFile; fileRef = 267899AE1AB040440000C7CA /* LibInsformance.m */; };
+		267899B51AB040440000C7CA /* LibInsformance.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 267899A91AB040440000C7CA /* LibInsformance.dylib */; };
+		267899C51AB044AF0000C7CA /* UIDevice+software.m in Sources */ = {isa = PBXBuildFile; fileRef = 267899C41AB044AF0000C7CA /* UIDevice+software.m */; };
+		267899D01AB0452F0000C7CA /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 267899C91AB0452F0000C7CA /* JDStatusBarNotification.m */; };
+		267899D11AB0452F0000C7CA /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 267899CB1AB0452F0000C7CA /* JDStatusBarStyle.m */; };
+		267899D21AB0452F0000C7CA /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 267899CD1AB0452F0000C7CA /* JDStatusBarView.m */; };
+		267899D31AB0452F0000C7CA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 267899CF1AB0452F0000C7CA /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		267899B61AB040440000C7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267899A11AB040430000C7CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 267899A81AB040440000C7CA;
+			remoteInfo = LibInsformance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		267899A71AB040440000C7CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				267899AD1AB040440000C7CA /* LibInsformance.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		267899A91AB040440000C7CA /* LibInsformance.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = LibInsformance.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		267899AC1AB040440000C7CA /* LibInsformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibInsformance.h; sourceTree = "<group>"; };
+		267899AE1AB040440000C7CA /* LibInsformance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibInsformance.m; sourceTree = "<group>"; };
+		267899B41AB040440000C7CA /* LibInsformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibInsformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		267899BA1AB040440000C7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		267899C31AB044AF0000C7CA /* UIDevice+software.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+software.h"; sourceTree = "<group>"; };
+		267899C41AB044AF0000C7CA /* UIDevice+software.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+software.m"; sourceTree = "<group>"; };
+		267899C81AB0452F0000C7CA /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
+		267899C91AB0452F0000C7CA /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
+		267899CA1AB0452F0000C7CA /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
+		267899CB1AB0452F0000C7CA /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
+		267899CC1AB0452F0000C7CA /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
+		267899CD1AB0452F0000C7CA /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
+		267899CE1AB0452F0000C7CA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		267899CF1AB0452F0000C7CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		267899A61AB040440000C7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267899B11AB040440000C7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267899B51AB040440000C7CA /* LibInsformance.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		267899A01AB040430000C7CA = {
+			isa = PBXGroup;
+			children = (
+				267899AB1AB040440000C7CA /* LibInsformance */,
+				267899B81AB040440000C7CA /* LibInsformanceTests */,
+				267899AA1AB040440000C7CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		267899AA1AB040440000C7CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				267899A91AB040440000C7CA /* LibInsformance.dylib */,
+				267899B41AB040440000C7CA /* LibInsformanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		267899AB1AB040440000C7CA /* LibInsformance */ = {
+			isa = PBXGroup;
+			children = (
+				267899AC1AB040440000C7CA /* LibInsformance.h */,
+				267899AE1AB040440000C7CA /* LibInsformance.m */,
+				267899C31AB044AF0000C7CA /* UIDevice+software.h */,
+				267899C41AB044AF0000C7CA /* UIDevice+software.m */,
+				267899C61AB0452F0000C7CA /* JDStatusBarNotification */,
+			);
+			path = LibInsformance;
+			sourceTree = "<group>";
+		};
+		267899B81AB040440000C7CA /* LibInsformanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				267899B91AB040440000C7CA /* Supporting Files */,
+			);
+			path = LibInsformanceTests;
+			sourceTree = "<group>";
+		};
+		267899B91AB040440000C7CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				267899BA1AB040440000C7CA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		267899C61AB0452F0000C7CA /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				267899C71AB0452F0000C7CA /* JDStatusBarNotification */,
+				267899CE1AB0452F0000C7CA /* LICENSE */,
+				267899CF1AB0452F0000C7CA /* README.md */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		267899C71AB0452F0000C7CA /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				267899C81AB0452F0000C7CA /* JDStatusBarNotification.h */,
+				267899C91AB0452F0000C7CA /* JDStatusBarNotification.m */,
+				267899CA1AB0452F0000C7CA /* JDStatusBarStyle.h */,
+				267899CB1AB0452F0000C7CA /* JDStatusBarStyle.m */,
+				267899CC1AB0452F0000C7CA /* JDStatusBarView.h */,
+				267899CD1AB0452F0000C7CA /* JDStatusBarView.m */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		267899A81AB040440000C7CA /* LibInsformance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267899BD1AB040450000C7CA /* Build configuration list for PBXNativeTarget "LibInsformance" */;
+			buildPhases = (
+				267899A51AB040440000C7CA /* Sources */,
+				267899A61AB040440000C7CA /* Frameworks */,
+				267899A71AB040440000C7CA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibInsformance;
+			productName = LibInsformance;
+			productReference = 267899A91AB040440000C7CA /* LibInsformance.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		267899B31AB040440000C7CA /* LibInsformanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267899C01AB040450000C7CA /* Build configuration list for PBXNativeTarget "LibInsformanceTests" */;
+			buildPhases = (
+				267899B01AB040440000C7CA /* Sources */,
+				267899B11AB040440000C7CA /* Frameworks */,
+				267899B21AB040440000C7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				267899B71AB040440000C7CA /* PBXTargetDependency */,
+			);
+			name = LibInsformanceTests;
+			productName = LibInsformanceTests;
+			productReference = 267899B41AB040440000C7CA /* LibInsformanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		267899A11AB040430000C7CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = nonstriater;
+				TargetAttributes = {
+					267899A81AB040440000C7CA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					267899B31AB040440000C7CA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 267899A41AB040430000C7CA /* Build configuration list for PBXProject "LibInsformance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 267899A01AB040430000C7CA;
+			productRefGroup = 267899AA1AB040440000C7CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				267899A81AB040440000C7CA /* LibInsformance */,
+				267899B31AB040440000C7CA /* LibInsformanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		267899B21AB040440000C7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		267899A51AB040440000C7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267899D31AB0452F0000C7CA /* README.md in Sources */,
+				267899C51AB044AF0000C7CA /* UIDevice+software.m in Sources */,
+				267899D21AB0452F0000C7CA /* JDStatusBarView.m in Sources */,
+				267899D11AB0452F0000C7CA /* JDStatusBarStyle.m in Sources */,
+				267899D01AB0452F0000C7CA /* JDStatusBarNotification.m in Sources */,
+				267899AF1AB040440000C7CA /* LibInsformance.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267899B01AB040440000C7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		267899B71AB040440000C7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 267899A81AB040440000C7CA /* LibInsformance */;
+			targetProxy = 267899B61AB040440000C7CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		267899BB1AB040440000C7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		267899BC1AB040440000C7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		267899BE1AB040450000C7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		267899BF1AB040450000C7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		267899C11AB040450000C7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibInsformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		267899C21AB040450000C7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LibInsformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		267899A41AB040430000C7CA /* Build configuration list for PBXProject "LibInsformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267899BB1AB040440000C7CA /* Debug */,
+				267899BC1AB040440000C7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		267899BD1AB040450000C7CA /* Build configuration list for PBXNativeTarget "LibInsformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267899BE1AB040450000C7CA /* Debug */,
+				267899BF1AB040450000C7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		267899C01AB040450000C7CA /* Build configuration list for PBXNativeTarget "LibInsformanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267899C11AB040450000C7CA /* Debug */,
+				267899C21AB040450000C7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 267899A11AB040430000C7CA /* Project object */;
+}

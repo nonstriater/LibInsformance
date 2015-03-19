@@ -14,6 +14,7 @@
 @interface LibInsformance (){
     int frameCounter;
     int maxFrameCounter;
+    int tickCounter;//每隔0.5s更新一次
     CFTimeInterval *frameTimeBuffer;
     CFTimeInterval lastFrameStartTime;
     CADisplayLink *timerDisplayLink;
@@ -30,6 +31,7 @@
         maxFrameCounter = 90;// 90/60=1.5s延迟
         frameTimeBuffer = malloc(sizeof(CFTimeInterval)*maxFrameCounter);
         frameCounter = 0;
+        tickCounter = 0;
         lastFrameStartTime = CFAbsoluteTimeGetCurrent();
     }
     return self;
@@ -61,21 +63,27 @@
         frameCounter ++;
     }
     
+    tickCounter ++;
+    
     lastFrameStartTime = timer.timestamp;
     
-   // 计算最低和平均fps
-    CFTimeInterval maxFrameTime = CGFLOAT_MIN;
-    CFTimeInterval averFrameTime = 0.f;
-    for (int i=0; i<frameCounter; i++) {
-        maxFrameTime = MAX(maxFrameTime, frameTimeBuffer[i]);
-        averFrameTime += frameTimeBuffer[i];
+   // 计算最低和平均fps,每隔0.5s更新一次
+    if(tickCounter%30 == 0){
+        tickCounter = 0;
+        CFTimeInterval maxFrameTime = CGFLOAT_MIN;
+        CFTimeInterval averFrameTime = 0.f;
+        for (int i=0; i<frameCounter; i++) {
+            maxFrameTime = MAX(maxFrameTime, frameTimeBuffer[i]);
+            averFrameTime += frameTimeBuffer[i];
+        }
+        averFrameTime /= frameCounter;
+        
+        int averFPS = roundf(1.f/(float)averFrameTime);
+        int lowestFPS = roundf(1.f/(float)maxFrameTime);
+        NSString *pInfo = [NSString stringWithFormat:@"Mem:%.2lfM  CPU:%.2lf%%  FPS:%d/%d",[UIDevice usedMemery],[UIDevice CPUUsage],lowestFPS,averFPS];
+        [JDStatusBarNotification showWithStatus:pInfo styleName:JDStatusBarStyleDark];
     }
-    averFrameTime /= frameCounter;
     
-    int averFPS = roundf(1.f/(float)averFrameTime);
-    int lowestFPS = roundf(1.f/(float)maxFrameTime);
-    NSString *pInfo = [NSString stringWithFormat:@"Mem:%.2lfM  CPU:%.2lf%%  FPS:%d/%d",[UIDevice usedMemery],[UIDevice CPUUsage],lowestFPS,averFPS];
-    [JDStatusBarNotification showWithStatus:pInfo styleName:JDStatusBarStyleDark];
 }
 
 

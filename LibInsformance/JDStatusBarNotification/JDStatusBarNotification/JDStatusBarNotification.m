@@ -210,7 +210,7 @@
     [self.overlayWindow setHidden:NO];
     
     // update style
-    self.topBar.backgroundColor = style.barColor;
+    self.topBar.backgroundColor = [UIColor clearColor];//style.barColor;
     self.topBar.textVerticalPositionAdjustment = style.textVerticalPositionAdjustment;
     UILabel *textLabel = self.topBar.textLabel;
     textLabel.textColor = style.textColor;

@@ -80,7 +80,7 @@
         
         int averFPS = roundf(1.f/(float)averFrameTime);
         int lowestFPS = roundf(1.f/(float)maxFrameTime);
-        NSString *pInfo = [NSString stringWithFormat:@"Mem:%.2lfM  CPU:%.2lf%%  FPS:%d/%d",[UIDevice usedMemery],[UIDevice CPUUsage],lowestFPS,averFPS];
+        NSString *pInfo = [NSString stringWithFormat:@"M:%.2lfM  C:%.2lf%%  FPS:%d/%d",[UIDevice usedMemery],[UIDevice CPUUsage],lowestFPS,averFPS];
         [JDStatusBarNotification showWithStatus:pInfo styleName:JDStatusBarStyleDark];
     }
     

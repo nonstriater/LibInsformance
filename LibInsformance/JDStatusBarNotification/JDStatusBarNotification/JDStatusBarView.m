@@ -56,8 +56,15 @@
     [super layoutSubviews];
     
     // label
-    self.textLabel.frame = CGRectMake(0, 1+self.textVerticalPositionAdjustment,
-                                      self.bounds.size.width, self.bounds.size.height-1);
+//    self.textLabel.frame = CGRectMake(0, 1+self.textVerticalPositionAdjustment,
+//                                      self.bounds.size.width, self.bounds.size.height-1);
+    self.textLabel.frame = CGRectMake((self.bounds.size.width - 190)/2 , self.textVerticalPositionAdjustment+16,
+                                      190, self.bounds.size.height/2);
+    self.textLabel.layer.cornerRadius = 5;
+    self.textLabel.layer.masksToBounds = YES;
+    self.textLabel.backgroundColor = [UIColor orangeColor];
+//    self.textLabel.layer.rasterizationScale = [UIScreen mainScreen].scale;
+//    self.textLabel.layer.shouldRasterize = YES;
     
     // activity indicator
     if (_activityIndicatorView ) {

@@ -21,3 +21,8 @@ Inspect Performance 2个单词中组合取出来的。
 
 将install 目录下的两个文件 LibInsformance.plist 和 LibInsformance.dylib 拷贝到越狱机器的/Library/MobileSubstrate/DynamicLibraries 目录下即可。
 
+```
+scp LibInsformance.dylib LibInsformance.plist root@<your-ip>:/Library/MobileSubstrate/DynamicLibraries
+killall SpringBoard  //重启SpringBoard
+```
+
